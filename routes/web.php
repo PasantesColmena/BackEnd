@@ -12,10 +12,3 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-<<<<<<< Updated upstream
-Route::get('/', function () {
-    return view('welcome');
-});
-=======
->>>>>>> Stashed changes
