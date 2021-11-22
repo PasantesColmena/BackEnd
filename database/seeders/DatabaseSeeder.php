@@ -41,7 +41,8 @@ class DatabaseSeeder extends Seeder
             'desc'=>'Fruta Proveniente del Manzano',
             'pre_uni'=>450,
             'img'=>'Manzana.jpg',
-            'categoria_id'=>1
+            'categoria_id'=>1,
+            'cant' => 1,
         ]);
 
         Productos::create([
@@ -49,7 +50,8 @@ class DatabaseSeeder extends Seeder
             'desc'=>'Frutos de los racimos de la vid',
             'pre_uni'=>2000,
             'img'=>'Uvas.jpg',
-            'categoria_id'=>1
+            'categoria_id'=>1,
+            'cant' => 1,
         ]);
 
         Productos::create([
@@ -57,7 +59,8 @@ class DatabaseSeeder extends Seeder
             'desc'=>'Fruto proveniente de los bananeros',
             'pre_uni'=>625,
             'img'=>'Bananos.jpg',
-            'categoria_id'=>1
+            'categoria_id'=>1,
+            'cant' => 1,
         ]);
 
         Productos::create([
@@ -65,7 +68,8 @@ class DatabaseSeeder extends Seeder
             'desc'=>'Fruto citrico proveniente del mandarino',
             'pre_uni'=>200,
             'img'=>'Mandarina.jpg',
-            'categoria_id'=>1
+            'categoria_id'=>1,
+            'cant' => 1,
         ]);
 
         Productos::create([
@@ -73,7 +77,8 @@ class DatabaseSeeder extends Seeder
             'desc'=>'Fruto proveniente de la sandia',
             'pre_uni'=>550,
             'img'=>'Sandia.jpg',
-            'categoria_id'=>1
+            'categoria_id'=>1,
+            'cant' => 1,
         ]);
 
         Productos::create([
@@ -81,7 +86,8 @@ class DatabaseSeeder extends Seeder
             'desc'=>'Fruto proveniente de Solanum lycopersicum',
             'pre_uni'=>500,
             'img'=>'tomate.jpg',
-            'categoria_id'=>1
+            'categoria_id'=>1,
+            'cant' => 1,
         ]);
 
         Productos::create([
@@ -89,7 +95,8 @@ class DatabaseSeeder extends Seeder
             'desc'=>'Fruto proveniente del Mangifera indica',
             'pre_uni'=>425,
             'img'=>'Mango.jpg',
-            'categoria_id'=>1
+            'categoria_id'=>1,
+            'cant' => 1,
         ]);
 
         Productos::create([
@@ -97,7 +104,8 @@ class DatabaseSeeder extends Seeder
             'desc'=>'Fruto proveniente del naranjo',
             'pre_uni'=>200,
             'img'=>'Naranja.jpg',
-            'categoria_id'=>1
+            'categoria_id'=>1,
+            'cant' => 1,
         ]);
 
         Productos::create([
@@ -105,7 +113,8 @@ class DatabaseSeeder extends Seeder
             'desc'=>'Verdura de la familia de los umbelíferas',
             'pre_uni'=>350,
             'img'=>'Zanahoria.jpg',
-            'categoria_id'=>2
+            'categoria_id'=>2,
+            'cant' => 1,
         ]);
 
         Productos::create([
@@ -113,7 +122,8 @@ class DatabaseSeeder extends Seeder
             'desc'=>'Verdura de la familia Cucurbitaceae',
             'pre_uni'=>350,
             'img'=>'Pepino.jpg',
-            'categoria_id'=>2
+            'categoria_id'=>2,
+            'cant' => 1,
         ]);
 
         Productos::create([
@@ -121,7 +131,8 @@ class DatabaseSeeder extends Seeder
             'desc'=>'Verdura de ;a familia Amaranthaceae',
             'pre_uni'=>200,
             'img'=>'Remolacha.jpg',
-            'categoria_id'=>2
+            'categoria_id'=>2,
+            'cant' => 1,
         ]);
 
         Productos::create([
@@ -129,7 +140,8 @@ class DatabaseSeeder extends Seeder
             'desc'=>'Verdura de la familia Asteráceas',
             'pre_uni'=>350,
             'img'=>'Lechuga.jpg',
-            'categoria_id'=>2
+            'categoria_id'=>2,
+            'cant' => 1,
         ]);
 
         Productos::create([
@@ -137,7 +149,8 @@ class DatabaseSeeder extends Seeder
             'desc'=>'Verdura de la familia Brassicaceae',
             'pre_uni'=>450,
             'img'=>'Coliflor.jpg',
-            'categoria_id'=>2
+            'categoria_id'=>2,
+            'cant' => 1,
         ]);
 
         Productos::create([
@@ -145,7 +158,8 @@ class DatabaseSeeder extends Seeder
             'desc'=>'Deliciosa Apio',
             'pre_uni'=>150,
             'img'=>'Apio.jpg',
-            'categoria_id'=>2
+            'categoria_id'=>2,
+            'cant' => 1,
         ]);
 
         Productos::create([
@@ -153,7 +167,8 @@ class DatabaseSeeder extends Seeder
             'desc'=>'Verdura de la familia amarilidáceas',
             'pre_uni'=>275,
             'img'=>'Cebolla.jpg',
-            'categoria_id'=>2
+            'categoria_id'=>2,
+            'cant' => 1,
         ]);
 
         Productos::create([
@@ -161,7 +176,8 @@ class DatabaseSeeder extends Seeder
             'desc'=>'Verdura de la familia brasicáceas',
             'pre_uni'=>125,
             'img'=>'Brocoli.jpg',
-            'categoria_id'=>2
+            'categoria_id'=>2,
+            'cant' => 1,
         ]);
 
         Productos::create([
@@ -169,7 +185,8 @@ class DatabaseSeeder extends Seeder
             'desc'=>'Hierba aromática de la familia lamiáceas ',
             'pre_uni'=>200,
             'img'=>'Albahaca.jpg',
-            'categoria_id'=>3
+            'categoria_id'=>3,
+            'cant' => 1,
         ]);
 
         Productos::create([
@@ -177,7 +194,8 @@ class DatabaseSeeder extends Seeder
             'desc'=>'Hierba aromática de la familia apiáceas',
             'pre_uni'=>200,
             'img'=>'Cilantro.jpg',
-            'categoria_id'=>3
+            'categoria_id'=>3,
+            'cant' => 1,
         ]);
 
         Productos::create([
@@ -185,7 +203,8 @@ class DatabaseSeeder extends Seeder
             'desc'=>'Planta herbácea de la familia Apiaceae',
             'pre_uni'=>200,
             'img'=>'Perejil.jpg',
-            'categoria_id'=>3
+            'categoria_id'=>3,
+            'cant' => 1,
         ]);
 
         Productos::create([
@@ -193,7 +212,8 @@ class DatabaseSeeder extends Seeder
             'desc'=>'Especia de la familia de las piperácea',
             'pre_uni'=>200,
             'img'=>'Pimienta.jpg',
-            'categoria_id'=>3
+            'categoria_id'=>3,
+            'cant' => 1,
         ]);
 
         Productos::create([
@@ -201,7 +221,8 @@ class DatabaseSeeder extends Seeder
             'desc'=>'Hierba leñosa de la familia Lamiaceae',
             'pre_uni'=>200,
             'img'=>'Romero.jpg',
-            'categoria_id'=>3
+            'categoria_id'=>3,
+            'cant' => 1,
         ]);
 
         Productos::create([
@@ -209,7 +230,8 @@ class DatabaseSeeder extends Seeder
             'desc'=>'Hierbas perennes de la familia de las lamiáceas',
             'pre_uni'=>200,
             'img'=>'Tomillo.jpg',
-            'categoria_id'=>3
+            'categoria_id'=>3,
+            'cant' => 1,
         ]);
 
         Productos::create([
@@ -217,7 +239,8 @@ class DatabaseSeeder extends Seeder
             'desc'=>'Especia de la familia Lamiaceae',
             'pre_uni'=>200,
             'img'=>'Oregano.jpg',
-            'categoria_id'=>3
+            'categoria_id'=>3,
+            'cant' => 1,
         ]);
 
         Productos::create([
@@ -225,7 +248,8 @@ class DatabaseSeeder extends Seeder
             'desc'=>'Condimento hecho a base de pimientos',
             'pre_uni'=>200,
             'img'=>'Paprica.jpg',
-            'categoria_id'=>3
+            'categoria_id'=>3,
+            'cant' => 1,
         ]);
 
         Facturas::create([
