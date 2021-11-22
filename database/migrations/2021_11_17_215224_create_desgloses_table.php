@@ -16,7 +16,7 @@ class CreateDesglosesTable extends Migration
         Schema::create('desgloses', function (Blueprint $table) {
             $table->foreignId('facturas_id');
             $table->foreignId('producto_id');
-            $table->float('cantidad');
+            $table->integer('cantidad');
             $table->float('pre_tot');
             $table->timestamps();
         });

@@ -14,6 +14,11 @@ class ProductosController extends Controller
         $data = Productos::with('categoria')->orderBy('nom','ASC')->get();
         return response()->json($data, 200);
     }
+    public function getAllCat($id)
+    {
+        $data = Productos::with('categoria')->where('categoria_id', $id)->orderBy('nom','ASC')->get();
+        return response()->json($data, 200);
+    }
     public function imagen($fileName)
     {
         $path = public_path().'/ImagenesSeeder/'.$fileName;
