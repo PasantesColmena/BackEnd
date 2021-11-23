@@ -39,6 +39,12 @@ class UsuariosController extends Controller
     public function get($ced){
         $data = Usuarios::find($ced);
         return response()->json($data, 200);
-      }
-
+    }
+    public function getLastId()
+    {
+        $data = Usuarios::latest()->get();
+        $data =  $data[0];
+        $res = $data['id'];
+        return response()->json($res, 200);
+    }
 }

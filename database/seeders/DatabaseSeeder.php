@@ -155,7 +155,7 @@ class DatabaseSeeder extends Seeder
 
         Productos::create([
             'nom'=>'Apio',
-            'desc'=>'Deliciosa Apio',
+            'desc'=>'Verdura perteneciente familia de las apiáceas',
             'pre_uni'=>150,
             'img'=>'Apio.jpg',
             'categoria_id'=>2,
