@@ -19,6 +19,7 @@ class CreateProductosTable extends Migration
             $table->string('nom');
             $table->string('desc');
             $table->float('pre_uni');
+            $table->integer('cantlleva');
             $table->integer('cant');
             $table->string('img');
             $table->foreignId('categoria_id');

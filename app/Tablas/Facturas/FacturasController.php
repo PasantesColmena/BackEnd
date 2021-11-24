@@ -11,7 +11,6 @@ class FacturasController extends Controller
 {
     public function create(Request $request)
     {
-
         $dataus = Usuarios::latest()->get();
         $dataus =  $dataus[0];
         $data['usuario_id'] = $dataus['id'];

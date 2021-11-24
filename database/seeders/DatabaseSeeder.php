@@ -42,7 +42,8 @@ class DatabaseSeeder extends Seeder
             'pre_uni'=>450,
             'img'=>'Manzana.jpg',
             'categoria_id'=>1,
-            'cant' => 1,
+            'cantlleva' => 0,
+            'cant' => 20,
         ]);
 
         Productos::create([
@@ -51,7 +52,8 @@ class DatabaseSeeder extends Seeder
             'pre_uni'=>2000,
             'img'=>'Uvas.jpg',
             'categoria_id'=>1,
-            'cant' => 1,
+            'cantlleva' => 0,
+            'cant' => 20,
         ]);
 
         Productos::create([
@@ -60,7 +62,8 @@ class DatabaseSeeder extends Seeder
             'pre_uni'=>625,
             'img'=>'Bananos.jpg',
             'categoria_id'=>1,
-            'cant' => 1,
+            'cantlleva' => 0,
+            'cant' => 20,
         ]);
 
         Productos::create([
@@ -69,7 +72,8 @@ class DatabaseSeeder extends Seeder
             'pre_uni'=>200,
             'img'=>'Mandarina.jpg',
             'categoria_id'=>1,
-            'cant' => 1,
+            'cantlleva' => 0,
+            'cant' => 20,
         ]);
 
         Productos::create([
@@ -78,7 +82,8 @@ class DatabaseSeeder extends Seeder
             'pre_uni'=>550,
             'img'=>'Sandia.jpg',
             'categoria_id'=>1,
-            'cant' => 1,
+            'cantlleva' => 0,
+            'cant' => 20,
         ]);
 
         Productos::create([
@@ -87,7 +92,8 @@ class DatabaseSeeder extends Seeder
             'pre_uni'=>500,
             'img'=>'tomate.jpg',
             'categoria_id'=>1,
-            'cant' => 1,
+            'cantlleva' => 0,
+            'cant' => 20,
         ]);
 
         Productos::create([
@@ -96,7 +102,8 @@ class DatabaseSeeder extends Seeder
             'pre_uni'=>425,
             'img'=>'Mango.jpg',
             'categoria_id'=>1,
-            'cant' => 1,
+            'cantlleva' => 0,
+            'cant' => 20,
         ]);
 
         Productos::create([
@@ -105,7 +112,8 @@ class DatabaseSeeder extends Seeder
             'pre_uni'=>200,
             'img'=>'Naranja.jpg',
             'categoria_id'=>1,
-            'cant' => 1,
+            'cantlleva' => 0,
+            'cant' => 20,
         ]);
 
         Productos::create([
@@ -114,7 +122,8 @@ class DatabaseSeeder extends Seeder
             'pre_uni'=>350,
             'img'=>'Zanahoria.jpg',
             'categoria_id'=>2,
-            'cant' => 1,
+            'cantlleva' => 0,
+            'cant' => 20,
         ]);
 
         Productos::create([
@@ -123,7 +132,8 @@ class DatabaseSeeder extends Seeder
             'pre_uni'=>350,
             'img'=>'Pepino.jpg',
             'categoria_id'=>2,
-            'cant' => 1,
+            'cantlleva' => 0,
+            'cant' => 20,
         ]);
 
         Productos::create([
@@ -132,7 +142,8 @@ class DatabaseSeeder extends Seeder
             'pre_uni'=>200,
             'img'=>'Remolacha.jpg',
             'categoria_id'=>2,
-            'cant' => 1,
+            'cantlleva' => 0,
+            'cant' => 20,
         ]);
 
         Productos::create([
@@ -141,7 +152,8 @@ class DatabaseSeeder extends Seeder
             'pre_uni'=>350,
             'img'=>'Lechuga.jpg',
             'categoria_id'=>2,
-            'cant' => 1,
+            'cantlleva' => 0,
+            'cant' => 20,
         ]);
 
         Productos::create([
@@ -150,7 +162,8 @@ class DatabaseSeeder extends Seeder
             'pre_uni'=>450,
             'img'=>'Coliflor.jpg',
             'categoria_id'=>2,
-            'cant' => 1,
+            'cantlleva' => 0,
+            'cant' => 20,
         ]);
 
         Productos::create([
@@ -159,7 +172,8 @@ class DatabaseSeeder extends Seeder
             'pre_uni'=>150,
             'img'=>'Apio.jpg',
             'categoria_id'=>2,
-            'cant' => 1,
+            'cantlleva' => 0,
+            'cant' => 20,
         ]);
 
         Productos::create([
@@ -168,7 +182,8 @@ class DatabaseSeeder extends Seeder
             'pre_uni'=>275,
             'img'=>'Cebolla.jpg',
             'categoria_id'=>2,
-            'cant' => 1,
+            'cantlleva' => 0,
+            'cant' => 20,
         ]);
 
         Productos::create([
@@ -177,7 +192,8 @@ class DatabaseSeeder extends Seeder
             'pre_uni'=>125,
             'img'=>'Brocoli.jpg',
             'categoria_id'=>2,
-            'cant' => 1,
+            'cantlleva' => 0,
+            'cant' => 20,
         ]);
 
         Productos::create([
@@ -186,7 +202,8 @@ class DatabaseSeeder extends Seeder
             'pre_uni'=>200,
             'img'=>'Albahaca.jpg',
             'categoria_id'=>3,
-            'cant' => 1,
+            'cantlleva' => 0,
+            'cant' => 20,
         ]);
 
         Productos::create([
@@ -195,7 +212,8 @@ class DatabaseSeeder extends Seeder
             'pre_uni'=>200,
             'img'=>'Cilantro.jpg',
             'categoria_id'=>3,
-            'cant' => 1,
+            'cantlleva' => 0,
+            'cant' => 20,
         ]);
 
         Productos::create([
@@ -204,7 +222,8 @@ class DatabaseSeeder extends Seeder
             'pre_uni'=>200,
             'img'=>'Perejil.jpg',
             'categoria_id'=>3,
-            'cant' => 1,
+            'cantlleva' => 0,
+            'cant' => 20,
         ]);
 
         Productos::create([
@@ -213,7 +232,8 @@ class DatabaseSeeder extends Seeder
             'pre_uni'=>200,
             'img'=>'Pimienta.jpg',
             'categoria_id'=>3,
-            'cant' => 1,
+            'cantlleva' => 0,
+            'cant' => 20,
         ]);
 
         Productos::create([
@@ -222,7 +242,8 @@ class DatabaseSeeder extends Seeder
             'pre_uni'=>200,
             'img'=>'Romero.jpg',
             'categoria_id'=>3,
-            'cant' => 1,
+            'cantlleva' => 0,
+            'cant' => 20,
         ]);
 
         Productos::create([
@@ -231,7 +252,8 @@ class DatabaseSeeder extends Seeder
             'pre_uni'=>200,
             'img'=>'Tomillo.jpg',
             'categoria_id'=>3,
-            'cant' => 1,
+            'cantlleva' => 0,
+            'cant' => 20,
         ]);
 
         Productos::create([
@@ -240,7 +262,8 @@ class DatabaseSeeder extends Seeder
             'pre_uni'=>200,
             'img'=>'Oregano.jpg',
             'categoria_id'=>3,
-            'cant' => 1,
+            'cantlleva' => 0,
+            'cant' => 20,
         ]);
 
         Productos::create([
@@ -249,7 +272,8 @@ class DatabaseSeeder extends Seeder
             'pre_uni'=>200,
             'img'=>'Paprica.jpg',
             'categoria_id'=>3,
-            'cant' => 1,
+            'cantlleva' => 0,
+            'cant' => 20,
         ]);
 
         Facturas::create([
