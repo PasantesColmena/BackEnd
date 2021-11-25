@@ -24,7 +24,7 @@ Route::prefix('categorias')->group(function () {
     Route::get('/{id}',[ CategoriasController::class, 'getCategorias']);
 });
 Route::prefix('facturas')->group(function () {
-    Route::get('/',[ FacturasController::class, 'getLast']);
+    Route::get('/ultima',[ FacturasController::class, 'getLast']);
     Route::post('/create/factura',[ FacturasController::class, 'create']);;
     Route::post('/create/desgloses',[ DesgloseController::class, 'create']);;
 });

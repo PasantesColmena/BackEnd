@@ -24,7 +24,7 @@ class FacturasController extends Controller
 
     public function getLast()
     {
-        $data = Facturas::latest()->get();
-        return response()->json($data, 200);
+        $data = Facturas::with('usuario','desglose','desglose.producto')->latest()->get();
+        return response()->json($data[0], 200);
     }
 }
