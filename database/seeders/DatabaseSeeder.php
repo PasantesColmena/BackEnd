@@ -10,10 +10,10 @@ use App\Tablas\Productos\Productos;
 use App\Tablas\Categorias\Categorias;
 use Symfony\Component\HttpFoundation\File\File;
 
+
 class DatabaseSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
      *
      * @return void
      */
@@ -293,5 +293,6 @@ class DatabaseSeeder extends Seeder
             'cantidad'=>5,
             'pre_tot'=>6000
         ]);
+
     }
 }

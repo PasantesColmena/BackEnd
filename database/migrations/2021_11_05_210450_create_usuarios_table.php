@@ -15,6 +15,7 @@ class CreateUsuariosTable extends Migration
     public function up()
     {
         Schema::create('usuarios', function (Blueprint $table) {
+
             $table->id();
             $table->string('nom');
             $table->string('ced');
@@ -22,7 +23,7 @@ class CreateUsuariosTable extends Migration
             $table->string('dir');
             $table->timestamps();
         });
-        // DB::statement("ALTER TABLE usuarios ADD fot_per LONGBLOB");
+        
     }
 
     /**

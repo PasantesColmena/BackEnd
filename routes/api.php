@@ -8,6 +8,7 @@ use App\Tablas\Productos\ProductosController;
 use App\Tablas\Categorias\CategoriasController;
 use App\Tablas\Desglose\DesgloseController;
 
+
 Route::prefix('usuario')->group(function () {
     Route::get('/',[ UsuariosController::class, 'getAll']);
     Route::post('/',[ UsuariosController::class, 'create']);
@@ -30,4 +31,3 @@ Route::prefix('facturas')->group(function () {
 });
 Route::prefix('imagenes')->group(function () {
     Route::get('/{img}',[ ProductosController::class, 'imagen']);
-});
