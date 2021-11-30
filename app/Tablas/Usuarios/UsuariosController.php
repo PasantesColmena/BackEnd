@@ -16,7 +16,7 @@ class UsuariosController extends Controller
         return response()->json($data, 200);
     }
 
-    public function create(Request $request){
+    public function create(Request $request){ //Crea los usuario
         $data['id'] = $request['id'];
         $data['nom'] = $request['nom'];
         $data['ced'] = $request['ced'];
@@ -36,11 +36,11 @@ class UsuariosController extends Controller
         ], 200);
     }
 
-    public function get($ced){
+    public function get($ced){ //Retorna un usuario por id
         $data = Usuarios::find($ced);
         return response()->json($data, 200);
     }
-    public function getLastId()
+    public function getLastId() //Retorna el ultimo id
     {
         $data = Usuarios::latest()->get();
         $data =  $data[0];

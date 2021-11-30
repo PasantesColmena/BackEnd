@@ -9,17 +9,17 @@ use Illuminate\Support\Facades\Response;
 
 class ProductosController extends Controller
 {
-    public function getAll()
+    public function getAll()  //retorna todos los productos
     {
         $data = Productos::with('categoria')->orderBy('nom','ASC')->get();
         return response()->json($data, 200);
     }
-    public function getAllCat($id)
+    public function getAllCat($id)  //Retorna todos los productos de un categoria
     {
         $data = Productos::with('categoria')->where('categoria_id', $id)->orderBy('nom','ASC')->get();
         return response()->json($data, 200);
     }
-    public function imagen($fileName)
+    public function imagen($fileName)  //Retorna la imagen para descargar
     {
         $path = public_path().'/ImagenesSeeder/'.$fileName;
         return Response::download($path);

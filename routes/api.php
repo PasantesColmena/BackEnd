@@ -31,3 +31,4 @@ Route::prefix('facturas')->group(function () {
 });
 Route::prefix('imagenes')->group(function () {
     Route::get('/{img}',[ ProductosController::class, 'imagen']);
+});

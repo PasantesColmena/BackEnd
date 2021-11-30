@@ -8,7 +8,7 @@ use App\Tablas\Categorias\Categorias;
 
 class CategoriasController extends Controller
 {
-    public function getCategorias()
+    public function getCategorias() //Retorna las categorias ordenadas por nombre
     {
         $data = Categorias::orderBy('nom','ASC')->get();
         return response()->json($data, 200);
