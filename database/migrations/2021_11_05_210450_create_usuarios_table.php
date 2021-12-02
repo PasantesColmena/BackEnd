@@ -15,14 +15,15 @@ class CreateUsuariosTable extends Migration
     public function up()
     {
         Schema::create('usuarios', function (Blueprint $table) {
-            $table->string('ced')->primary();
+
+            $table->id();
             $table->string('nom');
+            $table->string('ced');
             $table->string('num');
-            $table->string('cor');
             $table->string('dir');
-            $table->integer('edad');
             $table->timestamps();
         });
+        
     }
 
     /**

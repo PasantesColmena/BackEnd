@@ -1,14 +1,11 @@
+
 ## Notas
 
 Ejecutar el frontend y backend simultaneamente para que funcione toda la aplicacion web.
 
-# Laravel
-
-Este proyecto fue generado con [laravel] versión 4.2.9.
-
 ## Instalación de paquetes
 
-Ejecute `npm install`.
+Ejecute `composer install`.
 
 ## Creación de basee de datos 
 
@@ -18,7 +15,7 @@ ejecute `mysql -u'DB_USERNAME' -p` al ejecutar esto pide la contraseña `Enter p
 
 ## Migración de datos
 
-Ejecute `php artisan migrate` para cargar los campos y los valores de la tabla. Se puede visualizar en MySQL workbench.
+Ejecute `php artisan migrate:serve --seed` para cargar los campos y los valores de la tabla. Se puede visualizar en MySQL workbench.
 
 ## Servidor de desarrollo 
 
