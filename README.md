@@ -3,10 +3,6 @@
 
 Ejecutar el frontend y backend simultaneamente para que funcione toda la aplicacion web.
 
-# Laravel
-
-Este proyecto fue generado con [laravel] versión 4.2.9.
-
 ## Instalación de paquetes
 
 Ejecute `composer install`.
