@@ -22,9 +22,14 @@ class FacturasController extends Controller
         ], 200);
     }
 
-    public function getLast()  //Retorna la ultima factura creada
+    public static function getLast()  //Retorna la ultima factura creada
     {
         $data = Facturas::with('usuario','desglose','desglose.producto')->latest()->get();
         return response()->json($data[0], 200);
+    }
+    public static function getLastPdf()  //Retorna la ultima factura creada
+    {
+        $data = Facturas::with('usuario','desglose','desglose.producto')->latest()->get();
+        return $data[0];
     }
 }
