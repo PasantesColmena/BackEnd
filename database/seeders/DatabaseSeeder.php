@@ -6,6 +6,7 @@ use Illuminate\Database\Seeder;
 use App\Tablas\Desglose\Desglose;
 use App\Tablas\Facturas\Facturas;
 use App\Tablas\Usuarios\Usuarios;
+use Spatie\Permission\Models\Role;
 use App\Tablas\Productos\Productos;
 use App\Tablas\Categorias\Categorias;
 use Symfony\Component\HttpFoundation\File\File;
@@ -19,13 +20,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        Usuarios::create([
-            'nom'=>'Santiago',
-            'ced'=>'123456789',
-            'num'=>'12345678',
-            'dir'=>'El Carmen'
-        ]);
 
+        Role::create(['name' => 'cliente']);
         Categorias::create([
             'nom'=>'Frutas'
         ]);

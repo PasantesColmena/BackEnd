@@ -21,9 +21,12 @@ class CreateUsuariosTable extends Migration
             $table->string('ced');
             $table->string('num');
             $table->string('dir');
+            $table->string('email')->unique();
+            $table->string('password');
+            $table->rememberToken();
             $table->timestamps();
         });
-        
+
     }
 
     /**

@@ -19,17 +19,20 @@ class UsuariosController extends Controller
     public function create(Request $request){ //Crea los usuario
         $data['id'] = $request['id'];
         $data['nom'] = $request['nom'];
+        $data['email'] = $request['email'];
         $data['ced'] = $request['ced'];
         $data['num'] = $request['num'];
         $data['dir'] = $request['dir'];
-        Usuarios::create($data);
+        $data['password'] = bcrypt($request['password']);
+        $user = Usuarios::create($data);
+        $user->assignRole('cliente');
         return response()->json([
             'message' => "Creado correctamente",
             'success' => true
         ], 200);
     }
-    public function delete($ced){
-        $res = Usuarios::where('ced',$ced)->delete();
+    public function delete($id){
+        $res = Usuarios::where('id',$id)->delete();
         return response()->json([
             'message' => "Eliminado correctamente",
             'success' => true
@@ -46,5 +49,10 @@ class UsuariosController extends Controller
         $data =  $data[0];
         $res = $data['id'];
         return response()->json($res, 200);
+    }
+    public function getClientes()
+    {
+        return Usuarios::role('cliente')->get();
+
     }
 }
