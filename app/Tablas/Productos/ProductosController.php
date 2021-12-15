@@ -19,6 +19,11 @@ class ProductosController extends Controller
         $data = Productos::with('categoria')->where('categoria_id', $id)->orderBy('nom','ASC')->get();
         return response()->json($data, 200);
     }
+    public function delete($id){
+        $producto = Productos::findOrFail($id);
+        $producto->delete();
+        return response()->json(null, 204);
+    }
     public function imagen($fileName)  //Retorna la imagen para descargar
     {
         $path = public_path().'/ImagenesSeeder/'.$fileName;

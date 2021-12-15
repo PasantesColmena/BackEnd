@@ -22,7 +22,7 @@ class JwtAuthController extends Controller
     public function login(Request $request){
     	$req = Validator::make($request->all(), [
             'email' => 'required|email',
-            'password' => 'required|string|min:5',
+            'password' => 'required|string',
         ]);
 
         if ($req->fails()) {

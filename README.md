@@ -20,5 +20,8 @@ Ejecute `php artisan migrate:serve --seed` para cargar los campos y los valores 
 ## Servidor de desarrollo 
 
 Ejecute `php artisan serve` para poner en funcionamiento el servidor. 
+Ingresar por correo de gmail a https://mailtrap.io , usando:
+Correo: ctpracticadesarrollo@gmail.com
+Contra: ctpracticadesarrollo2021 
 
 

@@ -5,6 +5,7 @@ namespace App\Tablas\Usuarios;
 use Illuminate\Http\Request;
 use App\Tablas\Usuarios\Usuarios;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Mail;
 
 Use Log;
 
@@ -25,7 +26,11 @@ class UsuariosController extends Controller
         $data['dir'] = $request['dir'];
         $data['password'] = bcrypt($request['password']);
         $user = Usuarios::create($data);
+        Mail::send('mails.correo_confirmacion', $data, function($message) use ($data) {
+            $message->to($data['email'], $data['nom'])->subject('Cuenta Creada!');
+        });
         $user->assignRole('cliente');
+
         return response()->json([
             'message' => "Creado correctamente",
             'success' => true

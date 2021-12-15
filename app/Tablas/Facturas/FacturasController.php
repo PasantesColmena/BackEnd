@@ -11,9 +11,7 @@ class FacturasController extends Controller
 {
     public function create(Request $request) //Crea la factura
     {
-        $dataus = Usuarios::latest()->get(); //Relaciona la factura con su respectivo cliente
-        $dataus =  $dataus[0];
-        $data['usuario_id'] = $dataus['id'];
+        $data['usuario_id'] = $request['usuario_id'];
         $data['tot'] = $request['tot'];
         Facturas::create($data);  //Crea la factura
         return response()->json([
@@ -27,9 +25,16 @@ class FacturasController extends Controller
         $data = Facturas::with('usuario','desglose','desglose.producto')->latest()->get();
         return response()->json($data, 200);
     }
-    public static function getLast()  //Retorna la ultima factura creada
+    public function delete($id){
+        $res = Facturas::where('id',$id)->delete();
+        return response()->json([
+            'message' => "Eliminado correctamente",
+            'success' => true
+        ], 200);
+    }
+    public static function getLast($id)  //Retorna la ultima factura creada
     {
-        $data = Facturas::with('usuario','desglose','desglose.producto')->latest()->get();
+        $data = Facturas::where('usuario_id',$id)->with('usuario','desglose','desglose.producto')->latest()->get();
         return response()->json($data[0], 200);
     }
     public static function getLastPdf()  //Retorna la ultima factura creada

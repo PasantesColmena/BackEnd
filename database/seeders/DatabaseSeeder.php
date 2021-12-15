@@ -22,6 +22,10 @@ class DatabaseSeeder extends Seeder
     {
 
         Role::create(['name' => 'cliente']);
+
+        Role::create(['name' => 'admin']);
+
+        Role::create(['name' => 'superusuario']);
         Categorias::create([
             'nom'=>'Frutas'
         ]);
