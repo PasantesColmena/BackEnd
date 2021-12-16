@@ -2,6 +2,9 @@
 ## Notas
 
 Ejecutar el frontend y backend simultaneamente para que funcione toda la aplicacion web.
+Para ingresar a https://mailtrap.io, debe entrar usando la cuenta de Gmail:
+Correo: ctpracticadesarrollo@gmail.com
+Contraseña: ctpracticadesarrollo2021 
 
 ## Instalación de paquetes
 
@@ -19,6 +22,7 @@ Ejecute `php artisan migrate:serve --seed` para cargar los campos y los valores 
 
 ## Servidor de desarrollo 
 
-Ejecute `php artisan serve` para poner en funcionamiento el servidor. 
+Ejecute `php artisan serve` para poner en funcionamiento el servidor.
+
 
 
