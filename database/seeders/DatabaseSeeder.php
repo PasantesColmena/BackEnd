@@ -26,6 +26,34 @@ class DatabaseSeeder extends Seeder
         Role::create(['name' => 'admin']);
 
         Role::create(['name' => 'superusuario']);
+
+        $user = Usuarios::create([
+            'nom'=>'Juan Perez',
+            'ced'=>'123456789',
+            'num'=>'12345678',
+            'dir'=>'San Jose',
+            'email'=>'superusuario@prueba.com',
+            'password' =>bcrypt("superusuario")
+        ]);
+        $user->assignRole('superusuario');
+        $user = Usuarios::create([
+            'nom'=>'Maria Perez',
+            'ced'=>'123456789',
+            'num'=>'12345678',
+            'dir'=>'San Jose',
+            'email'=>'admin@prueba.com',
+            'password' =>bcrypt("admin")
+        ]);
+        $user->assignRole('admin');
+        $user = Usuarios::create([
+            'nom'=>'Juanita Perez',
+            'ced'=>'123456789',
+            'num'=>'12345678',
+            'dir'=>'San Jose',
+            'email'=>'cliente@prueba.com',
+            'password' =>bcrypt("cliente")
+        ]);
+        $user->assignRole('cliente');
         Categorias::create([
             'nom'=>'Frutas'
         ]);
@@ -274,24 +302,6 @@ class DatabaseSeeder extends Seeder
             'categoria_id'=>3,
             'cantlleva' => 0,
             'cant' => 20,
-        ]);
-
-        Facturas::create([
-            'usuario_id'=>1,
-            'tot'=>12000
-        ]);
-
-        Desglose::create([
-            'facturas_id'=>1,
-            'producto_id'=>1,
-            'cantidad'=>10,
-            'pre_tot'=>6000
-        ]);
-        Desglose::create([
-            'facturas_id'=>1,
-            'producto_id'=>2,
-            'cantidad'=>5,
-            'pre_tot'=>6000
         ]);
 
     }

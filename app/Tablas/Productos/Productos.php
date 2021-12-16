@@ -13,7 +13,7 @@ class Productos extends Model
     protected $table = "productos";
 
     protected $guarded = [];
-
+    public $timestamps = false;
     public function categoria(){
         return $this->belongsTo(Categorias::class);
     }
